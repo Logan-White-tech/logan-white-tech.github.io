@@ -1,5 +1,5 @@
 body{
-    background-color: black;
+    background-color: #43464B;
     color: gray;
 }
 
@@ -7,8 +7,33 @@ p{
     margin: 0px;
 }
 
+.rm-btn-style{
+    background-color: inherit;
+    border: none;
+}
+
+.rm-a-style{
+    text-decoration: none;
+    font-style: none;
+    display: inline-block;
+}
+
 .page-container{
 
+}
+
+.dropdown{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.dropdown-content{
+    display: none;
+}
+.dropdown.active .dropdown-content{
+    display: block;
+    position: absolute;
+    background-color: black;
+    padding-left: 10px;
 }
 
 /* Mobile */

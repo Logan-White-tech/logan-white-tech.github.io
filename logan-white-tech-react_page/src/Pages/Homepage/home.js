@@ -9,7 +9,7 @@ function Home() {
     <div className="page-container">
         <Navigation/>
         <div className='home-contents'>
-            <p> Temp Placeholder </p>
+            <p> Still a work in Progress</p>
         </div>
         <Footer/>
     </div>
