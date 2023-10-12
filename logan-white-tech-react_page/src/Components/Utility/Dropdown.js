@@ -1,9 +1,8 @@
 import {useEffect, useState, useRef} from 'react';
-import '../../CSS/navigation.css';
 import '../../CSS/general.css';
 
 const useOutsideClick = (callback) => {
-    const ref =useRef();
+    const ref = useRef();
   
     useEffect(() => {
       const handleClick = (event) => {
@@ -11,9 +10,7 @@ const useOutsideClick = (callback) => {
             callback();
         }
       };
-  
       document.addEventListener('click', handleClick);
-  
       return () => {
         document.removeEventListener('click', handleClick);
       };
@@ -37,7 +34,7 @@ function NavDropdown({header = "Default", contents=[{name:"A", link:"path"}]}){
     };
     const ref = useOutsideClick(handleOustideClick);
     return(
-        <button ref={ref} onClick={()=>{ setExpanded(!expanded); }} className={'dropdown ' +(expanded ? "active": "") } aria-expanded={expanded}> 
+        <button ref={ref} onClick={()=>{ setExpanded(!expanded); }} className={'dropdown ' +(expanded ? "active": "") } aria-expanded={expanded}>
             <div className='dropdown-header'>
                 {header}
             </div>

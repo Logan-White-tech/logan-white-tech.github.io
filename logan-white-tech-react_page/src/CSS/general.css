@@ -22,18 +22,43 @@ p{
 
 }
 
+/* Default Dropdown CSS */
 .dropdown{
-    padding-left: 10px;
-    padding-right: 10px;
+    display: inline-block;
+    border: none;
+    background-color: black;
+    color: #ffffff;
+    cursor: pointer;
+    padding: 5px;
+
+    font-size: 16px;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
+.dropdown:hover, 
+.dropdown-item:hover{
+    cursor: pointer;
+    background-color: #7818b4;
+}
+
 .dropdown-content{
     display: none;
 }
+
+.dropdown.active{
+    background-color: #7818b4;
+}
+
 .dropdown.active .dropdown-content{
+    margin-top: 5px;
     display: block;
     position: absolute;
     background-color: black;
-    padding-left: 10px;
+}
+
+.dropdown-content>.dropdown-item{
+    display: block;
 }
 
 /* Mobile */
