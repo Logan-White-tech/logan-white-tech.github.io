@@ -1,5 +1,6 @@
 import {useEffect, useState, useRef} from 'react';
 import '../../CSS/general.css';
+import { Link } from 'react-router-dom';
 
 const useOutsideClick = (callback) => {
     const ref = useRef();
@@ -21,7 +22,7 @@ const useOutsideClick = (callback) => {
   
 function generateContents(contents){
     let elements = contents.map((x) => 
-        (<a className='dropdown-item' href={x.link}>{x.name}</a>)
+        (<Link className='dropdown-item' path="{x.link}">{x.name}</Link>)
     );
     return elements;
 }

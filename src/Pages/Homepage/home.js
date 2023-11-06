@@ -5,6 +5,7 @@ import Dropdown from '../../Components/Utility/Dropdown';
 
 import Navigation from '../../Components/Navigation/Navigation';
 import Footer from '../../Components/Footer/Footer';
+import { Link } from 'react-router-dom';
 function Home() {
   return (
     <div className="page-container">
@@ -15,6 +16,8 @@ function Home() {
             <div>
               <Dropdown header={'Example'} contents={[{name:"X", link:"X"}, {name:"Y", link:"Y"}, {name:"Z", link:"Z"}]}/>
             </div>
+
+            <Link to="/Education">HomePage</Link>
         </div>
         <Footer/>
     </div>
