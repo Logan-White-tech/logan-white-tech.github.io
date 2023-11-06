@@ -1,0 +1,73 @@
+body{
+    background-color: #43464B;
+    color: gray;
+}
+
+p{
+    margin: 0px;
+}
+
+.rm-btn-style{
+    background-color: inherit;
+    border: none;
+}
+
+.rm-a-style{
+    text-decoration: none;
+    font-style: none;
+    display: inline-block;
+}
+
+.page-container{
+
+}
+
+/* Default Dropdown CSS */
+.dropdown{
+    display: inline-block;
+    border: none;
+    background-color: black;
+    color: #ffffff;
+    cursor: pointer;
+    padding: 5px;
+
+    font-size: 16px;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.dropdown:hover, 
+.dropdown-item:hover{
+    cursor: pointer;
+    background-color: #7818b4;
+}
+
+.dropdown-content{
+    display: none;
+}
+
+.dropdown.active{
+    background-color: #7818b4;
+}
+
+.dropdown.active .dropdown-content{
+    margin-top: 5px;
+    display: block;
+    position: absolute;
+    background-color: black;
+}
+
+.dropdown-content>.dropdown-item{
+    display: block;
+}
+
+/* Mobile */
+@media only screen and (max-width:767.98px) {
+    
+}
+
+/* Tablet */
+
+@media only screen and (min-width:798px) and (max-width:991.98px){
+
+}

@@ -1,0 +1,49 @@
+.navigation-container{
+    margin: 0px;
+    padding-left:10px;
+    background-color: black;
+}
+
+.navigation-container button,
+.navigation-container a{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    font-style: normal;
+    text-decoration: none;
+
+    color: #c0c0c0;
+    background-color: inherit;
+
+    display: inline-block;
+    border: none;
+    margin:0px;
+    padding: 0px;
+    /* margin-left: 5px; */
+}
+
+.navigation-container>div,
+.navigation-container>button{
+    transform: skew(15deg);
+    display: inline-block;
+    padding: 10px;
+}
+
+.navigation-container>div:hover,
+.navigation-container>button:hover
+{
+    background-color: #7818b4;
+    cursor: pointer;
+}
+
+.navigation-container>div>a,
+.navigation-container>button>div{
+    transform: skew(-15deg);
+}
+
+.navigation-container .dropdown .dropdown-content{
+    margin-top: 10px;
+    left: -10px;
+}
+
+
