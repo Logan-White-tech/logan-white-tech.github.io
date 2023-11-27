@@ -22,7 +22,7 @@ const useOutsideClick = (callback) => {
   
 function generateContents(contents){
     let elements = contents.map((x) => 
-        (<Link className='dropdown-item' path="{x.link}">{x.name}</Link>)
+        (<Link className='dropdown-item' to={x.link}>{x.name}</Link>)
     );
     return elements;
 }

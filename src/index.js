@@ -3,9 +3,9 @@ import ReactDOM from 'react-dom/client';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
-// import './index.css';
 import Home from './Pages/Homepage/home.js';
 import Education from './Pages/Education/Education.js';
+import ApiTest from './Pages/Testing/ApiTest.js';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -14,7 +14,8 @@ root.render(
     <Routes>
       <Route index element={<Home />}></Route>
       <Route path="Education" element={<Education/>}></Route>
-      
+      <Route path="ApiTest" element={<ApiTest/>}></Route>
+
     </Routes>
   </BrowserRouter>
   // <React.StrictMode>

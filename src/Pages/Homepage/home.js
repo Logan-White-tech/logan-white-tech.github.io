@@ -18,6 +18,13 @@ function Home() {
             </div>
 
             <Link to="/Education">HomePage</Link>
+
+
+            <div class="wrapper">
+
+              <h2>Title should be centered</h2>
+              
+            </div>
         </div>
         <Footer/>
     </div>
