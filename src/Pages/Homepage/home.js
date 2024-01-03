@@ -1,7 +1,7 @@
 
 import '../../CSS/general.css';
 import '../../CSS/home.css';
-import Dropdown from '../../Components/Utility/Dropdown';
+import LinkDropdown from '../../Components/Utility/LinkDropdown';
 
 import Navigation from '../../Components/Navigation/Navigation';
 import Footer from '../../Components/Footer/Footer';
@@ -14,7 +14,7 @@ function Home() {
             <p> Still a work in Progress</p>
 
             <div>
-              <Dropdown header={'Example'} contents={[{name:"X", link:"X"}, {name:"Y", link:"Y"}, {name:"Z", link:"Z"}]}/>
+              <LinkDropdown header={'Example'} contents={[{name:"X", link:"X"}, {name:"Y", link:"Y"}, {name:"Z", link:"Z"}]}/>
             </div>
 
             <Link to="/Education">HomePage</Link>
