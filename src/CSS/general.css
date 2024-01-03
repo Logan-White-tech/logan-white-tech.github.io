@@ -29,6 +29,11 @@ p{
 .page-container{
 
 }
+button{
+    background-color: #000000;
+    color: #ffffff;
+    border: 2px ridge #091f44;
+}
 
 /* Default Dropdown CSS */
 .dropdown{
@@ -78,4 +83,15 @@ p{
 
 @media only screen and (min-width:798px) and (max-width:991.98px){
 
+}
+
+/* Tabbed Text  */
+.tabbed-text-container{
+    width: max-content;
+}
+.tabbed-text-header{
+
+}
+.tabbed-text-content{
+    width: 100%;
 }

@@ -1,0 +1,30 @@
+.calc-contents{
+    padding: 20px;
+    font-size: 20px;
+}
+
+.calc-contents{
+    max-width: 400px;
+}
+.calc-contents input{
+    float: right;
+}
+.calc-contents button{
+    float: right;
+}
+
+.essence-abilities{
+    padding: 20px;
+    max-width: 400px;
+}
+.essence-abilities button{
+    padding: 5px 20px;
+}
+
+.calc-contents h3 button{
+    width: 100%;
+    font-size: 16px;
+    padding: 8px ;
+    background-color: #000;
+    color: #fff;
+}

@@ -6,6 +6,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from './Pages/Homepage/home.js';
 import Education from './Pages/Education/Education.js';
 import ApiTest from './Pages/Testing/ApiTest.js';
+import EssenceCalc from './Pages/DND/essenceCalc.js';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -14,7 +15,8 @@ root.render(
     <Routes>
       <Route index element={<Home />}></Route>
       <Route path="Education" element={<Education/>}></Route>
-      <Route path="ApiTest" element={<ApiTest/>}></Route>
+      {/* <Route path="ApiTest" element={<ApiTest/>}></Route> */}
+      <Route path="EssenceCalc" element={<EssenceCalc/>}></Route>
 
     </Routes>
   </BrowserRouter>

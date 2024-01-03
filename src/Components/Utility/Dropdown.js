@@ -19,15 +19,8 @@ const useOutsideClick = (callback) => {
   
     return ref;
   };
-  
-function generateContents(contents){
-    let elements = contents.map((x) => 
-        (<Link className='dropdown-item' to={x.link}>{x.name}</Link>)
-    );
-    return elements;
-}
 
-function NavDropdown({header = "Default", contents=[{name:"A", link:"path"}]}){
+function Dropdown({header = "Default", contents="Default Contents"}){
     const [expanded, setExpanded] = useState(false);
 
     const handleOustideClick = () =>{
@@ -40,9 +33,9 @@ function NavDropdown({header = "Default", contents=[{name:"A", link:"path"}]}){
                 {header}
             </div>
             <div className='dropdown-content'>
-                {generateContents(contents)}
+                {contents}
             </div>
         </button>
     );
 }
-export default NavDropdown;
+export default Dropdown;

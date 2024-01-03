@@ -1,9 +1,9 @@
 import {useEffect, useState, useRef} from 'react';
-import '../../CSS/navigation.css';
 import '../../CSS/general.css';
+import { Link } from 'react-router-dom';
 
 const useOutsideClick = (callback) => {
-    const ref =useRef();
+    const ref = useRef();
   
     useEffect(() => {
       const handleClick = (event) => {
@@ -11,9 +11,7 @@ const useOutsideClick = (callback) => {
             callback();
         }
       };
-  
       document.addEventListener('click', handleClick);
-  
       return () => {
         document.removeEventListener('click', handleClick);
       };
@@ -24,12 +22,12 @@ const useOutsideClick = (callback) => {
   
 function generateContents(contents){
     let elements = contents.map((x) => 
-        (<a className='dropdown-item' href={x.link}>{x.name}</a>)
+        (<Link className='dropdown-item' to={x.link}>{x.name}</Link>)
     );
     return elements;
 }
 
-function NavDropdown({header = "Default", contents=[{name:"A", link:"path"}]}){
+function LinkDropdown({header = "Default", contents=[{name:"A", link:"path"}]}){
     const [expanded, setExpanded] = useState(false);
 
     const handleOustideClick = () =>{
@@ -37,7 +35,7 @@ function NavDropdown({header = "Default", contents=[{name:"A", link:"path"}]}){
     };
     const ref = useOutsideClick(handleOustideClick);
     return(
-        <button ref={ref} onClick={()=>{ setExpanded(!expanded); }} className={'dropdown ' +(expanded ? "active": "") } aria-expanded={expanded}> 
+        <button ref={ref} onClick={()=>{ setExpanded(!expanded); }} className={'dropdown ' +(expanded ? "active": "") } aria-expanded={expanded}>
             <div className='dropdown-header'>
                 {header}
             </div>
@@ -47,4 +45,4 @@ function NavDropdown({header = "Default", contents=[{name:"A", link:"path"}]}){
         </button>
     );
 }
-export default NavDropdown;
+export default LinkDropdown;
