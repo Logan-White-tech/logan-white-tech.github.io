@@ -32,7 +32,7 @@ function Target(targetNum, rolls, rollDie = 4){
         setStacks(stacks =>({...stacks}))
     }
     return(
-        <div key={targetNum}> 
+        <div className="target" key={targetNum}> 
                 <div>
                     <h2>Target </h2>
                     {Object.keys(stacks).map((x)=>(          

@@ -13,11 +13,12 @@ root.render(
 
   <BrowserRouter>
     <Routes>
-      <Route index element={<Home />}></Route>
-      <Route path="Education" element={<Education/>}></Route>
-      {/* <Route path="ApiTest" element={<ApiTest/>}></Route> */}
-      <Route path="EssenceCalc" element={<EssenceCalc/>}></Route>
-
+      <Route >
+        <Route index element={<Home />}></Route>
+        <Route path="Education" element={<Education/>}></Route>
+        <Route path="ApiTest" element={<ApiTest/>}></Route>
+        <Route path="EssenceCalc" element={<EssenceCalc/>}></Route>
+        </Route>
     </Routes>
   </BrowserRouter>
   // <React.StrictMode>

@@ -14,7 +14,7 @@ function Navigation(){
             <Dropdown header={"Pages"} contents= {[{name: "Github",link: "https://github.com/Logan-White-tech"}, {name: "LinkedIn",link: "https://www.linkedin.com/in/logan-white-02bb01254/"}]}/>
             {/* <Dropdown header={"Projects"} contents= {[{name: "3D Printing",link: "#"}, {name: "CNC",link: "#"}, {name: "Programming",link: "#"}]}/> */}
             {/* <Dropdown header={"Testing Pages"} contents= {[{name: "API",link: "ApiTest"}]}/> */}
-            <Dropdown header={"DND"} contents= {[{name: "Essence Calc",link: "EssenceCalc"}]}/>
+            <Dropdown header={"DND"} contents= {[{name: "Essence Calc",link: "/EssenceCalc"}]}/>
             
             
             <div>
