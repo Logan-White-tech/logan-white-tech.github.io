@@ -7,7 +7,7 @@ import './testing';
 
 
 function ApiTest() {
-    const num = "9400136105440701945344";
+    // const num = "9400136105440701945344";
 
     async function handleAPI(FormData){
         
