@@ -6,11 +6,13 @@
     float: right;
 }
 .calc-contents button{
-    float: right;
+    float: left;
 }
 
 .target{
+    display: inline-block;
     margin: 20px;
+    width: fit-content;
 }
 .essence-abilities{
     padding: 20px;

@@ -29,7 +29,8 @@ const essences = [
         Effect: Heal over time effects have increased strength and duration. This effect scales with the amount of familiar biomass being shared with the summoner and amplifies the passive healing the familiar provides.
         Effect: Drain abilities have increased effect. This effect scales with the amount of familiar biomass being shared with the summoner.
         Effect: Resistance to blood effects in significantly increased.
-        Effect: Can be used to make ranged grapple attacks. Health is continually drained from grappled enemies.`
+        Effect: Can be used to make ranged grapple attacks. Health is continually drained from grappled enemies.`,
+        punish:"d4"
     },
     {
         name:"Darkness",
